@@ -15,7 +15,7 @@ Abrir o Site da Amazon.com
     [Tags]             home page
     Acessar a home page do site da Amazon.com
     Verificar se o título da página fica "Amazon.com.br | Tudo pra você, de A a Z." 
-    Verificar se aparece o h2 com a frase "frete GRÁTIS no seu primeiro pedido"  
+    Verificar se aparece o h2 com a frase "Frete GRÁTIS no seu primeiro pedido" 
 
 # Verificar menus
 #     [Documentation]    Esse teste verificar a existência de menu
