@@ -3,6 +3,7 @@ Resource    base.robot
 
 *** Variables ***
 ${TITLE}                Amazon.com.br | Tudo pra você, de A a Z.
+${MENU_ELETRONICOS}     #nav-xshop [data-csa-c-content-id = nav_cs_electronics]
 ${MENU_BOOKS}           //a[contains(.,'eBooks Kindle')]
 
 
