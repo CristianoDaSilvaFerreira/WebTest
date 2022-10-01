@@ -15,8 +15,9 @@ Abrir o Site da Amazon.com
     Acessar a home page do site da Amazon.com
     Verificar se o título da página fica "Amazon.com.br | Tudo pra você, de A a Z."    
 
-Verificar se tem o menu Books Kindle
-    Menu Books Kindle
+Verificar menus
+    Menu eletrônicos
+    # Menu Books Kindle
 
 
 # Clicar no botão do menu eletrônicos
