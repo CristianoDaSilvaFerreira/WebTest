@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on linux)" generated="20220930 20:01:47.474" rpa="false" schemaversion="3">
+<suite id="s1" name="Test-Lojas-Americas" source="/home/cristiano/Documentos/Workspace/Estudos/RobotFramework/WebTest/tests/test-lojas-americas.robot">
+<test id="s1-t1" name="Abrir o Site da Amazon.com" line="11">
+<kw name="Abrir navegador" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220930 20:01:47.590" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
+<status status="PASS" starttime="20220930 20:01:47.589" endtime="20220930 20:01:49.737"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220930 20:01:49.738" endtime="20220930 20:01:49.855"/>
+</kw>
+<status status="PASS" starttime="20220930 20:01:47.589" endtime="20220930 20:01:49.855"/>
+</kw>
+<kw name="Acessar a home page do site da Amazon.com" library="resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220930 20:01:49.856" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
+<status status="PASS" starttime="20220930 20:01:49.856" endtime="20220930 20:01:51.372"/>
+</kw>
+<status status="PASS" starttime="20220930 20:01:49.855" endtime="20220930 20:01:51.372"/>
+</kw>
+<kw name="Verificar se o título da página fica &quot;Amazon.com.br | Tudo pra você, de A a Z.&quot;" library="resources" sourcename="Verificar se o título da página fica &quot;${TITLE}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220930 20:01:51.394" level="INFO">Page title is 'Amazon.com.br | Tudo pra você, de A a Z.'.</msg>
+<status status="PASS" starttime="20220930 20:01:51.372" endtime="20220930 20:01:51.394"/>
+</kw>
+<status status="PASS" starttime="20220930 20:01:51.372" endtime="20220930 20:01:51.395"/>
+</kw>
+<kw name="Fechar navegador" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 20:01:51.704" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-86.png"&gt;&lt;img src="selenium-screenshot-86.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220930 20:01:51.395" endtime="20220930 20:01:51.705"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220930 20:01:51.705" endtime="20220930 20:01:51.769"/>
+</kw>
+<status status="PASS" starttime="20220930 20:01:51.395" endtime="20220930 20:01:51.770"/>
+</kw>
+<doc>Esse teste verifica o menu eletrônicos do site da Amazon.com.br
+e verifica a categoria Computadores e Informática</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="PASS" starttime="20220930 20:01:47.588" endtime="20220930 20:01:51.770"/>
+</test>
+<test id="s1-t2" name="Verificar se tem o menu Books Kindle" line="18">
+<kw name="Abrir navegador" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220930 20:01:51.773" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
+<status status="PASS" starttime="20220930 20:01:51.773" endtime="20220930 20:01:54.089"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220930 20:01:54.089" endtime="20220930 20:01:54.212"/>
+</kw>
+<status status="PASS" starttime="20220930 20:01:51.772" endtime="20220930 20:01:54.212"/>
+</kw>
+<kw name="Menu Books Kindle" library="resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>menu=${MENU_BOOKS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20220930 20:01:59.647" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-87.png"&gt;&lt;img src="selenium-screenshot-87.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 20:01:59.648" level="FAIL">Element 'menu=eBooksKindle' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20220930 20:01:54.213" endtime="20220930 20:01:59.649"/>
+</kw>
+<status status="FAIL" starttime="20220930 20:01:54.213" endtime="20220930 20:01:59.651"/>
+</kw>
+<kw name="Fechar navegador" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 20:01:59.983" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-88.png"&gt;&lt;img src="selenium-screenshot-88.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220930 20:01:59.653" endtime="20220930 20:01:59.983"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220930 20:01:59.983" endtime="20220930 20:02:00.050"/>
+</kw>
+<status status="PASS" starttime="20220930 20:01:59.653" endtime="20220930 20:02:00.050"/>
+</kw>
+<status status="FAIL" starttime="20220930 20:01:51.771" endtime="20220930 20:02:00.050">Element 'menu=eBooksKindle' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20220930 20:01:47.475" endtime="20220930 20:02:00.051"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">categorias</stat>
+<stat pass="1" fail="0" skip="0">menus</stat>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Test-Lojas-Americas">Test-Lojas-Americas</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
