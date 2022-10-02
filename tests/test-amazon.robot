@@ -16,7 +16,6 @@ Abrir o Site da Amazon.com
     Acessar a home page do site da Amazon.com
     Verificar se o título da página fica "Amazon.com.br | Tudo pra você, de A a Z."
     Verificar se aparece o h2 com a frase "Frete GRÁTIS no seu primeiro pedido" 
-    
 
 Verificar se existe o banner da "oferta do dia"
     [Documentation]        Verificar se tem o banner de oferta do dia

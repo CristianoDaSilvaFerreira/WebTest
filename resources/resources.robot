@@ -62,23 +62,7 @@ Verificar se aparece a categoria "Informática"
     Click Element                       locator=${CATEGORIA_INFORMATICA}
 
 Verificar se existe oferta
-    Element Should Be Visible       locator=${OFERTA_MACBOOKS}
-
-
-    
-    
-
-# Verificar se o título da página é "${TITLE}"
-#     Title Should Be                    title=${TITLE}
-
-
-
-# Verificar se aparece o h2 com a frase "${H2_FRETE_GRATIS}"
-#     Wait Until Element Is Visible       locator=${H2_FRETE_GRATIS}
-#     Sleep                               3
-#     Execute Javascript                  window.scrcollTo(0, 1500)
-
-    
+    Element Should Be Visible       locator=${OFERTA_MACBOOKS}      
 
 Menu eletrônicos
     Wait Until Element Is Visible    menu_eletrônicos=${MENU_ELETRONICOS}
