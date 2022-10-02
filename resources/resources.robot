@@ -31,8 +31,9 @@ Verificar se o título da página fica "${TITLE}"
     Title Should Be                     title=${TITLE}    
 
     
-Verificar se aparece o h2 com a frase "${H2_FRETE_GRATIS}"
-    Wait Until Element Is Visible       locator=${H2_FRETE_GRATIS}
+Verificar se aparece o h2 com a frase "Frete GRÁTIS no seu primeiro pedido"
+    Execute JavaScript                 window.scrollTo(0,400)
+    Wait Until Element is Visible      locator=${H2_FRETE_GRATIS}    
     
 
 Menu eletrônicos
