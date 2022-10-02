@@ -126,4 +126,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-Log/
+
+# Ingorando arquivos de imagens da pasta log
+*.png
